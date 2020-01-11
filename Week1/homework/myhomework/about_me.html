@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>About Me</title>
+    <style>
+      .list-item{
+        color:red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>About Me</h1>
+
+    <ul>
+      <li>Nickname: <span id="nickname"></span></li>
+      <li>Favorite food: <span id="fav-food"></span></li>
+      <li>Hometown: <span id="hometown"></span></li>
+    </ul>
+
+    <script>
+        document.body.style.fontFamily = "arial, sans-serif";
+        
+        let a = document.getElementById('nickname');
+        let b = document.getElementById('fav-food');
+        let c = document.getElementById('hometown');
+
+        a.id = 'alpha';
+        b.id = 'vita';
+        c.id = 'gama';
+
+        let d = document.getElementsByTagName('li');
+
+        console.log(d);
+
+        for(let i = 0; i < d.length; i++){
+
+          d[i].classList.add('list-item');
+        }
+        /* e.className = 'list-item';
+        f.className = 'list-item'; */
+
+        let img = document.createElement('img');
+        img.src = 'firefox.jpeg';
+
+        document.body.appendChild(img);
+
+    </script>
+  </body>
+</html>
+

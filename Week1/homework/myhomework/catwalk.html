@@ -1,0 +1,82 @@
+<!-- THIS PROJECT IS NOT COMPLETE !-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Cat Walk</title>
+</head>
+
+<body>
+    <img style="position:absolute;" src="http://www.anniemation.com/clip_art/images/cat-walk.gif" id="image" />
+</body>
+<script>
+
+    let a = document.getElementById('image');
+    a.style.left = '0px';
+    let i = 0;
+    let d = document.documentElement.clientWidth;
+    let x = 0;
+
+    function catWalk() {
+
+        i += 10;
+        a.style.left = `${i}px`;
+        console.log(a.style.left);
+        let c = parseInt(a.style.left);
+        
+
+        if (c >= d) {
+
+            i = 0;
+        }
+
+
+
+        if (c >= (d / 2)) {
+
+            a.src = "https://tenor.com/StFI.gif";
+            x += 1;
+            console.log('im in 1');
+            
+
+            if (++x == 5) {
+
+                a.src = "http://www.anniemation.com/clip_art/images/cat-walk.gif";
+                console.log(a.src + "in the second if ")
+            }
+
+            /* let z = setInterval(function change() {
+
+                a.src = "https://tenor.com/StFI.gif";
+                x += 1;
+
+                if(x == 5){
+                
+                    a.src = "http://www.anniemation.com/clip_art/images/cat-walk.gif";
+                    clearInterval(z);
+
+                };
+            },100);
+ */
+
+        };
+
+        /* if (a.src == "https://tenor.com/StFI.gif") {
+
+
+            console.log(a.src + "in the first if ")
+            x += 1;
+
+
+        } */
+
+
+
+    }
+
+    let s = setInterval(catWalk, 100);
+</script>
+
+</html>
