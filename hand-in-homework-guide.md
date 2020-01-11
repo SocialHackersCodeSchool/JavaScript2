@@ -2,7 +2,7 @@
 
 In this module you'll submit your homework only using GIT and GitHub.
 
-1. [GitHub](https://www.github.com/HackYourFuture/JavaScript2)
+1. [GitHub](https://www.github.com/SocialHackerCreteClass/JavaScript2)
 
 ## 1. GitHub homework guide
 
@@ -10,7 +10,7 @@ Follow the walkthrough to learn how to submit your homework for each week:
 
 ONE TIME ONLY (START OF EVERY MODULE)
 
-1. Create a [fork](https://help.github.com/en/articles/fork-a-repo) of the following repository: [HackYourHomework/JavaScript2](https://www.github.com/hackyourhomework/javascript2). You do this by using the `fork` option on the top right
+1. Create a [fork](https://help.github.com/en/articles/fork-a-repo) of the following repository: [SocialHackerCreteClass/JavaScript2](https://www.github.com/SocialHackerCreteClass/javascript2). You do this by using the `fork` option on the top right
 2. Navigate to the URL of the forked repository (it should be in your personal GitHub account, under "repositories", under the name `<YOUR_GITHUB_ACCOUNTNAME>/JavaScript2`)
 3. Clone the repository, using SSH, to your local machine. You can do this by typing in `git clone <git url>` in the command line
 4. On your local machine, navigate to the folder using the command line
@@ -29,7 +29,7 @@ EVERY WEEK
 Homework week 1 <Your name>
 ```
 
-7. Submit the pull request from your forked repository branch into the `master` branch of the original repository (`HackYourHomework/JavaScript2`)
+7. Submit the pull request from your forked repository branch into the `master` branch of the original repository (`SocialHackerCreteClass/JavaScript2`)
 8. Do a little victory dance because you did it! Good job!
 
 For a visual walkthrough the steps please watch the following video one of our teachers, Unmesh Joshi, has made:
