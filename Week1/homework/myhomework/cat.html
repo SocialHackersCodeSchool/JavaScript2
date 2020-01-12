@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Cat Walk</title>
+</head>
+
+<body>
+    <img style="position:absolute;" src="http://www.anniemation.com/clip_art/images/cat-walk.gif" id="image" />
+</body>
+<script>
+    let image = document.getElementById('image');
+    let move = 0;
+    let state = true;
+    let image2 = "https://tenor.com/StFI.gif";
+    let width = document.documentElement.clientWidth;
+    image.style.left = '0px';
+    /* let left = image.style.left; */
+    let widthn ;
+    let timeout = 0;
+
+    function catWalk(){
+
+            move += 10;
+            
+            widthn = parseInt(image.style.left);
+
+            if((widthn >= width / 2) && (state == true)){
+
+                image.src = image2;
+                timeout += 1;
+                move -= 10;
+
+                if(timeout == 10){
+
+                    image.src = "http://www.anniemation.com/clip_art/images/cat-walk.gif";
+                    state = false;
+                    console.log('im done in 1')
+                    
+                };
+            };
+
+            if( widthn >= width && state == false){
+                    
+                    move = 0;
+                    state = true;
+                    console.log('im in 2')
+                    timeout = 0;
+                    
+                };
+            image.style.left = `${move}px`;    
+    };
+
+    let i = setInterval(catWalk,100);
+
+</script>
+
+</html>
