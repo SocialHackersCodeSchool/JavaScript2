@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<head>
+    <style>
+
+        body {
+
+            background-color: rgb(241, 217, 77);
+
+        }
+        #box {
+
+            background-color: whitesmoke;
+            padding-bottom : 50px;
+
+        }
+
+        #quote , #author{
+
+            color: rgb(255, 136, 0);
+
+
+        }
+
+        #quote{
+
+            text-align : center;
+            /* justify-content: center; */
+            padding-top:20px;
+            
+        }
+
+        #author {
+
+            /* text-align: end; */
+            float: right;
+            padding-bottom: 20px;
+            margin-right: 20px;
+        }
+
+        #btn {
+            /* display: block;
+            float: left; */
+            margin-left : 20px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box">
+        <p id="quote">
+
+        </p>
+        <p id="author">
+
+        </p>
+        <button id="btn" onclick="newquote()">New Quote</button>
+    </div>
+    <script>
+        function newquote(){
+
+            let q = [
+                {qu : 'here is the first text', au : 'sobhanessi'},
+                {qu : 'here is the second text', au : 'dawshessi'},
+                {qu : 'here is the third text' , au : 'sobhan'},
+                {qu : 'here is the fourth text' , au : 'essi'}, 
+                {qu : 'here is the fifth text' , au : 'soroush'},
+                {qu : 'here is the sixth text' , au : 'abbas'},
+                {qu : 'here is the seventh text' , au : 'dawsh'},
+                {qu : 'here is the eigth text' , au : 'sobi'},
+                {qu : 'here is the ninth text' , au : 'ali'}, 
+                {qu : 'here is the tenth text' , au : 'mohammad'},
+            ]
+
+            let a = Math.floor(Math.random() * 10);
+
+            let p1 = document.getElementById('quote');
+            let p2 = document.getElementById('author');
+
+            let z = q[a].qu;
+            let x = q[a].au;
+
+            p1.innerHTML = z ;
+            p2.innerHTML = x ;
+
+        }
+    </script>
+</body>
